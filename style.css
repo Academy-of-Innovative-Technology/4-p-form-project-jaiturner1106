@@ -1,1 +1,184 @@
+/* ===== Global Reset & Base ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(135deg, #0d0d2b 0%, #1a1a4e 50%, #0d0d2b 100%);
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #e0e0ff;
+  padding: 40px 20px;
+}
+
+/* ===== Page Wrapper ===== */
+.page-wrapper {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+/* ===== Header ===== */
+header {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+header h1 {
+  font-size: 2.4rem;
+  color: #c084fc;
+  text-shadow: 0 0 14px #a855f7, 0 0 30px #7c3aed;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #94a3b8;
+  letter-spacing: 1px;
+}
+
+/* ===== Form ===== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* ===== Fieldset & Legend ===== */
+fieldset {
+  border: 2px solid #6d28d9;
+  border-radius: 12px;
+  padding: 24px 28px;
+  background: rgba(109, 40, 217, 0.08);
+  box-shadow: 0 0 18px rgba(109, 40, 217, 0.25);
+}
+
+legend {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #c084fc;
+  padding: 0 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* ===== Form Group (text / email / password / datalist) ===== */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #a78bfa;
+}
+
+.form-group input {
+  background: #0f0f2e;
+  border: 1.5px solid #6d28d9;
+  border-radius: 8px;
+  color: #e0e0ff;
+  font-size: 0.95rem;
+  padding: 10px 14px;
+  outline: none;
+  transition: border-color 0.25s, box-shadow 0.25s;
+}
+
+.form-group input::placeholder {
+  color: #4b5563;
+}
+
+.form-group input:focus {
+  border-color: #c084fc;
+  box-shadow: 0 0 10px rgba(192, 132, 252, 0.5);
+}
+
+/* ===== Radio Group ===== */
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  color: #d1d5db;
+  transition: color 0.2s;
+}
+
+.radio-group label:hover {
+  color: #c084fc;
+}
+
+.radio-group input[type="radio"] {
+  accent-color: #a855f7;
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+}
+
+/* ===== Checkbox Group ===== */
+.checkbox-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 24px;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  color: #d1d5db;
+  transition: color 0.2s;
+}
+
+.checkbox-group label:hover {
+  color: #c084fc;
+}
+
+.checkbox-group input[type="checkbox"] {
+  accent-color: #a855f7;
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+}
+
+/* ===== Submit Area ===== */
+.submit-area {
+  text-align: center;
+}
+
+input[type="submit"] {
+  background: linear-gradient(135deg, #7c3aed, #a855f7);
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10px;
+  padding: 14px 48px;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.5);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+input[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 30px rgba(168, 85, 247, 0.8);
+}
+
+input[type="submit"]:active {
+  transform: translateY(0);
+}
 
